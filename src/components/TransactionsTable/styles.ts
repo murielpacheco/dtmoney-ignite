@@ -36,4 +36,12 @@ export const Container = styled.div`
       }
     }
   }
+
+  span {
+    width: 100%;
+    display: inline-block;
+    text-align:center;
+    color: var(--text-body);
+    margin-top: 2rem;
+  }
 `;

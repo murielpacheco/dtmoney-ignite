@@ -6,7 +6,8 @@ export function TransactionsTabel() {
 
   return (
     <Container>
-      <table>
+      {transactions.length > 0 ? (
+        <table>
         <thead>
           <tr>
             <th>Título</th>
@@ -37,6 +38,10 @@ export function TransactionsTabel() {
         </tbody>
 
       </table>
+      ) : (
+        <span>Insira sua primeira transação.</span>
+      ) }
+      
     </Container>
   )
 }

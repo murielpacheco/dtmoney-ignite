@@ -9,28 +9,28 @@ createServer({
     transaction: Model,
   },
 
-  seeds(server) {
-    server.db.loadData({
-      transactions: [
-        {
-          id: 1,
-          title: 'Freelance website',
-          type: 'deposit',
-          category: 'Dev',
-          amount: 3400,
-          createdAt: new Date ('2021-11-10 09:00:00'),
-        },
-        {
-          id: 2,
-          title: 'Interent',
-          type: 'withdraw',
-          category: 'Casa',
-          amount: 220,
-          createdAt: new Date ('2021-11-5 14:00:00'),
-        },
-      ],
-    })
-  },
+  // seeds(server) {
+  //   server.db.loadData({
+  //     transactions: [
+  //       {
+  //         id: 1,
+  //         title: 'Freelance website',
+  //         type: 'deposit',
+  //         category: 'Dev',
+  //         amount: 3400,
+  //         createdAt: new Date ('2021-11-10 09:00:00'),
+  //       },
+  //       {
+  //         id: 2,
+  //         title: 'Interent',
+  //         type: 'withdraw',
+  //         category: 'Casa',
+  //         amount: 220,
+  //         createdAt: new Date ('2021-11-5 14:00:00'),
+  //       },
+  //     ],
+  //   })
+  // },
 
   routes() {
     this.namespace = 'api';
